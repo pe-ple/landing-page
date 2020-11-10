@@ -32,6 +32,10 @@
           }
         }
       })(new XMLHttpRequest(), 'https://peopleworld.herokuapp.com/', document, 'GET');
+      const toPeople = () => {
+        if (!window.location.href.includes('?people'))
+          return window.location.href += "?people";
+      };
     </script>
 </head>
 
@@ -61,8 +65,8 @@
                         <a href="#pricing" class="nav-link">Plans</a>
                     </li>
                     <li class="nav-item">
-                      <a href="?people" class="nav-link">Our Community</a>
-                  </li>
+                      <button class="nav-link border-0 outline-0" onclick="toPeople()">Our Community</button>
+                    </li>
                 </ul>
                 <a href="#getaccess" class="nav-item btn bg-success text-white btn-rounded navbar-btn">Get Access</a>
 
@@ -82,7 +86,7 @@
                       <h1 class="hero-title mb-4">The Community Plugin Built For Growth</h1>
                         <p>Pe•ple is a plug & play community platform to help businesses boost user retention, engagement, lifetime value, and SEO</p>
                         <div class="mt-4">
-                            <a href="?people" class="btn btn-primary mt-2 mr-2">Our Community</a>
+                            <button onclick="toPeople()" class="btn btn-primary mt-2 mr-2">Our Community</button>
                             <a href="#getaccess" class="btn btn-success mt-2 mr-2">Get Access</a>
                         </div>
                     </div>

@@ -119,6 +119,10 @@ p {
   font-size: .875rem;
 }
 
+.outline-0:focus {
+  outline: none;
+}
+
 .btn-rounded {
   border-radius: 30px;
 }
