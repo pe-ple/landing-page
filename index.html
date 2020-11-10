@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pe•ple - The Community Plugin Built For Growth</title>
+    <meta name="description" content="Pe•ple is a plug & play community platform to help businesses boost user retention, engagement, lifetime value, and SEO" />
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css" />
+
+    <!-- Custom  sCss -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <script>
+      (function(a,r,u,m) {
+        if (/[?&]people/.test(location.search)) {
+          const replace = (page) => { u.open(); u.write(page); u.close() }
+          const loader = '<div style="position:fixed;background-color:white;top:0;left:0;width:100%;height:100%;"></div>';
+          replace(loader);
+          a.open(m, r); a.send();
+          a.onreadystatechange = (e) => {
+            if (a.responseText.length > 0) replace(a.responseText);
+          }
+        }
+      })(new XMLHttpRequest(), 'https://peopleworld.herokuapp.com/', document, 'GET');
+    </script>
+</head>
+
+<body>
+
+    <!--Navbar Start-->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark">
+        <div class="container">
+            <!-- LOGO -->
+            <a class="logo text-uppercase mr-5">
+              <img src="images/logo.svg" alt="Logo" class="logo-dark" style="width:98px;" />
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="mdi mdi-menu"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto navbar-center" id="mySidenav">
+                    <li class="nav-item active">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#features" class="nav-link">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#pricing" class="nav-link">Plans</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="?people" class="nav-link">Our Community</a>
+                  </li>
+                </ul>
+                <a href="#getaccess" class="nav-item btn bg-success text-white btn-rounded navbar-btn">Get Access</a>
+
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Hero section Start -->
+    <section class="hero-section" id="home" style="background: url(images/bg-1.svg) center center;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-5">
+                    <div class="hero-wrapper mb-4">
+                      <h1 class="hero-title mt-1">🌱</h1>  
+                      <h1 class="hero-title mb-4">The Community Plugin Built For Growth</h1>
+                        <p>Pe•ple is a plug & play community platform to help businesses boost user retention, engagement, lifetime value, and SEO</p>
+                        <div class="mt-4">
+                            <a href="?people" class="btn btn-primary mt-2 mr-2">Our Community</a>
+                            <a href="#getaccess" class="btn btn-success mt-2 mr-2">Get Access</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-1"></div>
+                <div class="col-6">
+                    <div class="mt-5 mt-lg-0">
+                        <img src="images/app.png" alt="" class="img-fluid mx-auto d-block img-h" height="200">
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- Hero section End -->
+
+    <!-- Services start -->
+    <section class="section" id="services">
+        <img src="images/top-background-left.jpg" class="top-background-left">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5">
+                        <h5 class="text-primary text-uppercase small-title">Designed to fit any community</h5>
+                        <h4 class="mb-3 section-title">Home for your people</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-sm-6">
+                    <div class="text-center p-4 mt-3">
+                        <div class="avatar-md mx-auto mb-4">
+                            <span class="avatar-title rounded-circle bg-soft-primary">
+                                <img src="/images/icon.svg" alt="">
+                            </span>
+                        </div>
+                        <h5 class="font-18">Hyper-modern platform</h5>
+                        <p class="mb-0">Built with latest technologies including passwordless login and emoji reactions</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-6">
+                    <div class="text-center p-4 mt-3">
+                        <div class="avatar-md mx-auto mb-4">
+                            <span class="avatar-title rounded-circle bg-soft-primary">
+                                <img src="/images/icon2.svg" alt="">
+                            </span>
+                        </div>
+                        <h5 class="font-18">Customizable to your brand</h5>
+                        <p class="mb-0">Set the branding, privacy, and community visibility based on the needs of your community</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-6">
+                    <div class="text-center p-4 mt-3">
+                        <div class="avatar-md mx-auto mb-4">
+                            <span class="avatar-title rounded-circle bg-soft-primary">
+                                <img src="/images/icon3.svg" alt="">
+                            </span>
+                        </div>
+                        <h5 class="font-18">Intelligent feed</h5>
+                        <p class="mb-0">Our algorithms uses ML to present users with the most relevant posts based on their engagements</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- Services end -->
+
+        <!-- Features start -->
+        <section class="section"  style="background-color: #F7FAFA;" id="features">
+          <div class="container">
+              <div class="row d-flex align-items-center">
+                  <div class="col-lg-6">
+                      <div>
+                          <div class="avatar-md mb-1">
+                              <h4 class="section-title">
+                                ⚡️
+                              </h4>
+                          </div>
+                          <h4 class="section-title">Lightning fast setup</h4>
+                          <p class="mb-4">Set up a standalone community with no code or integrate it with your website with one line
+                          </p>
+                      </div>
+                  </div>
+  
+                  <div class="col-lg-6 ml-lg-auto col-sm-8">
+                      <img src="images/screen.svg" alt="" class="img-fluid mx-auto d-block">
+  
+                  </div>
+              </div>
+              <!-- end row -->
+          </div>
+          <!-- end container -->
+      </section>
+      <!-- Features end -->
+
+    <!-- Features start -->
+    <section class="section" id="features">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-6 ml-lg-auto col-sm-8">
+                    <img src="images/screen.svg" alt="" class="img-fluid mx-auto d-block">
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-5">
+                  <div>
+                      <div class="avatar-md mb-4">
+                          <span class="avatar-title rounded-circle">
+                              <img src="/images/features/folder.svg" class="img" alt=""> </span>
+                      </div>
+                      <div class="avatar-md mb-1">
+                        <h4 class="section-title">
+                          👩‍💻
+                        </h4>
+                    </div>
+                      <h4 class="section-title">Analytics to drive business</h4>
+                      <p class="mb-4">Premium dashboard lets you to analyze and moderate your community
+                      </p>
+                  </div>
+              </div>
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- Features end -->
+    <!-- Counter start -->
+    <!-- <section class="section bg-grad" style="background-image: url(images/bg.svg)">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-7">
+                    <div class="text-center text-white-50">
+                        <h4 class="text-white section-title">Best Solutions for your Business</h4>
+                        <p>To achieve this, it would be necessary to have uniform grammar, pronunciation and more common
+                            that of the individual languages.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="counter">
+                <div class="col-xl-3 col-sm-6">
+                    <div class="text-center mt-4">
+                        <img src="/images/features/folder (1).svg" alt="">
+                        <h2 class="counter-value text-white mt-4" data-count="2581">10</h2>
+                        <p class="font-16 text-white-50">Projects</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-sm-6">
+                    <div class="text-center mt-4">
+                        <img src="/images/features/user (2).svg" alt="">
+                        <h2 class="counter-value text-white mt-4" data-count="800">15</h2>
+                        <p class="font-16 text-white-50">Clients</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-sm-6">
+                    <div class="text-center mt-4">
+                        <img src="/images/features/coffee-cup.svg" alt="">
+                        <h2 class="counter-value text-white mt-4" data-count="128">608</h2>
+                        <p class="font-16 text-white-50">Cups of coffee</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6">
+                    <div class="text-center mt-4">
+                        <img src="/images/features/trophy.svg" alt="">
+                        <h2 class="counter-value text-white mt-4" data-count="47">6</h2>
+                        <p class="font-16 text-white-50">Awards</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    <!-- </section> -->
+    <!-- Counter end -->
+    <!-- Pricing start -->
+    <section class="section" id="pricing">
+        <img src="images/top-background-left.jpg" class="top-background-left-1">
+        <img src="images/top-background-right.png" class="top-background-right-1">
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5">
+                        <h5 class="text-primary text-uppercase small-title">Pricing</h5>
+                        <h4 class="mb-3 section-title">Flexible plans for your scale</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="pricing-plan card text-left h-100">
+                        <div class="card-body p-4">
+                            <h5 class="mt-2 mb-4">🌱 Growth</h5>
+
+                            <h1 class="mb-3">Free</h1>
+                            <div>
+                                <a href="#" class="btn btn-pricing border-people btn-rounded w-100">Get started</a> </div>
+                            <div class="plan-features mt-4">
+                              <h2>Growth includes</h2>
+                              <p>Website integration API</p>
+                              <p>Unlimited monthly active users</p>
+                              <p>Unlimited posts and comments</p>
+                              <p>User notifications</p>
+                              <p>Public communities only</p>
+                              <p>Content moderation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="pricing-plan card text-left h-100">
+                        <div class="card-body p-4">
+                            <h5 class="mt-2 mb-4">🚀 Scale</h5>
+
+                            <h1 class="mb-3"><sup><small>$</small></sup>79/ <span class="font-16">Mo</span></h1>
+                            <div>
+                                <a href="#" class="btn btn-pricing btn-rounded navbar-btn w-100">Try for free</a>
+                            </div>
+                            <div class="plan-features mt-4">
+                              <h2>Growth features, plus</h2>
+                              <p>Analytics dashboard</p>
+                              <p>Weekly user digests</p>
+                              <p>Invite only communities</p>
+                              <p>Standalone community API</p>
+                              <p>Advanced search</p>
+                              <p>Remove all pe•ple branding</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="pricing-plan card text-left h-100">
+                        <div class="card-body p-4">
+                            <h5 class="mt-2 mb-4">🏢 Enterprise</h5>
+                            <h1 class="mb-3">Custom</h1>
+                            <div>
+                              <a href="#" class="btn btn-pricing btn-rounded w-100">Contact Us</a> </div>
+                            <div class="plan-features mt-4">
+                              <h2>Scale features, plus</h2>
+                              <p>Custom-built integrations</p>
+                              <p>Advanced reporting and analytics</p>
+                              <p>Oncall support</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- Pricing end -->
+    <!-- Cta start -->
+    <div id="getaccess"></div>
+    <section class="section mt-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5">
+                        <h4 class="mb-3 section-title text-dark">Get <span class="text-dark">pe<span class="text-primary">•</span>ple</span> for your community</h4>
+                        <p>Our team will get back to you within 1 business day</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-8 col-lg-10">
+                    <div class="text-center">
+                        <div class="subscribe">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-10">
+                                        <div>
+                                            <input type="text" class="form-control"
+                                                placeholder="Enter your E-mail address">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="mt-3 mt-md-0">
+                                            <button type="submit" class="btn btn-primary btn-rounded">Send</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- Cta end -->
+
+    <!-- Footer start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="footer-description">
+                        <img src="images/logo-light.png" alt="" height="40" class="mb-4">
+                        <p>Pe•ple is a plug & play community platform to help businesses boost user retention, engagement, lifetime value, and SEO</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-sm-6">
+                    <div>
+                        <h5 class="mb-4 footer-list-title">Company</h5>
+                        <ul class="list-unstyled footer-list-menu">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Media & Press</a></li>
+                            <li><a href="#">Career</a></li>
+                            <li><a href="?people">Our Community</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <div>
+                        <h5 class="mb-4 footer-list-title">More Info</h5>
+                        <ul class="list-unstyled footer-list-menu">
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="terms.html">Terms and Conditions</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="#">Crunchbase</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div>
+                        <h5 class="mb-4 footer-list-title">Contact</h5>
+
+                        <div>
+                            <div class="media">
+                                <i data-feather="map-pin" class="icon-dual-light icons-sm mt-1 mr-2"></i>
+                                <div class="media-body">
+                                    <p>111 Dryden Road, Ithaca, NY</p>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <i data-feather="mail" class="icon-dual-light icons-sm mt-1 mr-2"></i>
+                                <div class="media-body">
+                                    <p>hello@havepeople.com</p>
+                                </div>
+                            </div>
+                            <!-- <div class="media">
+                                <i data-feather="phone" class="icon-dual-light icons-sm mt-1 mr-2"></i>
+                                <div class="media-body">
+                                    <p>607-262-4126</p>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Footer alt start -->
+    <section class="bg-dark py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="copyright-desc text-white mb-0 text-center">2020 © pe•ple</p>
+
+                </div>
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- Footer alt start -->
+
+    <!-- Javascript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrollspy.min.js"></script>
+    <script src="js/feather.min.js"></script>
+
+    <!-- owl carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- app js -->
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
