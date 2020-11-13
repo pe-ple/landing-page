@@ -139,6 +139,25 @@ p {
   color: #609992 !important;
 }
 
+.head-container {
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+@media (min-width: 576px) {
+  .head-container {
+    margin-right: 6rem;
+    margin-left: 6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .head-container {
+    margin-right: -4rem;
+    margin-left: 10rem;
+  }
+}
+
 .icon-dual-primary {
   color: #609992;
   fill: rgba(47, 85, 212, 0.2);
