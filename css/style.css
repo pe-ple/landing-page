@@ -158,6 +158,13 @@ p {
   }
 }
 
+@media (min-width: 1800px) {
+  .head-container {
+    margin-right: -6rem;
+    margin-left: 21rem;
+  }
+}
+
 .icon-dual-primary {
   color: #609992;
   fill: rgba(47, 85, 212, 0.2);
@@ -267,6 +274,11 @@ p {
 
 .text-info {
   color: #57B8FF !important;
+}
+
+.feature-title {
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
 }
 
 .icon-dual-info {
