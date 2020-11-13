@@ -47,10 +47,10 @@
           body: JSON.stringify({email})
         })
           .then((res) => {
-            console.log("good", res)
+            console.log("good", res.json());
           })
           .catch((err) => {
-            console.log("error", err);
+            console.log("error", err.json());
           })
       }
     </script>
