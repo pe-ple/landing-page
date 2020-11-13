@@ -46,8 +46,9 @@
           },
           body: JSON.stringify({email})
         })
-          .then((res) => {
-            console.log("good", res.json());
+          .then(async (res) => {
+            const result = await res.json();
+            console.log(result);
           })
           .catch((err) => {
             console.log("error", err.json());
