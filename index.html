@@ -36,6 +36,24 @@
         if (!window.location.href.includes('?people'))
           return window.location.href += "?people";
       };
+
+      const showSignupAlert = () => {
+        const email = $('#email').val();
+        fetch('https://peopleworld.herokuapp.com/api/landing/email', {
+          method: 'POST',
+          mode: 'same-origin',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({email})
+        })
+          .then((res) => {
+            $('#getaccess').append('<div class="position-fixed alert alert-success alert-dismissible fade show" style="top: 5.8rem; left: 50%; transform: translateX(-50%); z-index: 5;" role="alert"><strong>You\'re on the list!</strong> Our team will reach out to you shortly<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>')
+          })
+          .catch((err) => {
+            $('#getaccess').append('<div class="position-fixed alert alert-danger alert-dismissible fade show" style="top: 5.8rem; left: 50%; transform: translateX(-50%); z-index: 5;" role="alert"><strong>Error!</strong> We were not able to sign you up. Please try again later<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>')
+          })
+      }
     </script>
 </head>
 
@@ -355,21 +373,19 @@
                 <div class="col-xl-8 col-lg-10">
                     <div class="text-center">
                         <div class="subscribe">
-                            <form>
                                 <div class="row">
                                     <div class="col-md-8">
                                         <div>
-                                            <input type="text" class="form-control"
+                                            <input id="email" type="text" class="form-control"
                                                 placeholder="Enter your E-mail address">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="mt-3 mt-md-0">
-                                            <button type="submit" class="btn btn-primary w-100">Get Started</button>
+                                            <button type="submit" class="btn btn-primary w-100" onclick="showSignupAlert()">Get Started</button>
                                         </div>
                                     </div>
                                 </div>
-                            </form>
                         </div>
                     </div>
                 </div>
@@ -416,7 +432,6 @@
                 <div class="col-lg-3 col-sm-6">
                     <div>
                         <h5 class="mb-4 footer-list-title">Contact</h5>
-
                         <div>
                             <div class="media">
                                 <i data-feather="map-pin" class="icon-dual-light icons-sm mt-1 mr-2"></i>
