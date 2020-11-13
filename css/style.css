@@ -158,6 +158,12 @@ p {
   }
 }
 
+@media (min-width: 1800px) {
+  .head-container {
+    min-width: 1440px;
+  }
+}
+
 .icon-dual-primary {
   color: #609992;
   fill: rgba(47, 85, 212, 0.2);
