@@ -120,6 +120,7 @@ const showSignupAlert = () => {
     .then(async (res) => {
       const result = await res.json();
       if (result.success) {
+        gtag('event', 'sign_up');
         return $('#getaccess').append('<div class="position-fixed alert alert-success alert-dismissible fade show" style="top: 5.8rem; left: 50%; transform: translateX(-50%); z-index: 5;" role="alert"><strong>You\'re on the list!</strong> Our team will reach out to you shortly<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>')
       } else if (result.error != null) {
         return $('#getaccess').append(`<div class="position-fixed alert alert-danger alert-dismissible fade show" style="top: 5.8rem; left: 50%; transform: translateX(-50%); z-index: 5;" role="alert"><strong>Error!</strong> ${result.error}. Please try again<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>`) 
