@@ -30,7 +30,7 @@ module.exports = {
           label: 'Homepage',
           position: 'right',
         },
-        {href: '?people', label: 'Our Community', position: 'right'},
+        {href: 'https://havepeople.com/?people', label: 'Our Community', position: 'right'},
       ],
     },
     footer: {

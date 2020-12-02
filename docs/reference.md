@@ -1,8 +1,6 @@
 ---
-id: doc1
-title: Style Guide
-sidebar_label: Style Guide
-slug: /
+id: reference
+title: Reference [TO BE DELETED]
 ---
 
 You can write content using [GitHub-flavored Markdown syntax](https://github.github.com/gfm/).
