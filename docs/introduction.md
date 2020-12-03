@@ -8,10 +8,10 @@ slug: /
 🏡 *Build a home for your people*
 
 ## 🎥 Demo
-Check out the [pe•ple community](/docs/setup)
+Check out the pe[•](/docs/)ple [community](https://havepeople.com/?people)
 
 ## 🏃‍♂️ Quick Start
-[Set up your first community](/docs/setup)
+[Set up your community](/docs/setup)
 
 
 ## What is pe[•](/docs/)ple?

@@ -3,7 +3,7 @@ id: setup
 title: Setup
 ---
 
-⏱ Get your community up and running in 30 seconds or less
+⏱ Get your community up and running in less than 30 seconds
 
 ## Installation
 Add the following code snippet to the header of your website
