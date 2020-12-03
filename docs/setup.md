@@ -8,7 +8,7 @@ title: Setup
 ## Installation
 Add the following code snippet to the header of your website
 ```html
-<!-- pe•ple community plugin -->
+<!-- pe•ple plugin -->
 <script src="https://www.havepeople.com/connector.js"></script>
 ```
 
