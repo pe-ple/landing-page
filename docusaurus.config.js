@@ -1,7 +1,7 @@
 module.exports = {
   title: 'pe•ple documentation',
   tagline: 'The Community Plugin for Growth',
-  url: 'havepeople.com',
+  url: 'https://havepeople.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
