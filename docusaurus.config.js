@@ -5,7 +5,7 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'static/images/favicon.png',
+  favicon: './static/images/favicon.png',
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
@@ -22,8 +22,8 @@ module.exports = {
       title: '👩‍💻',
       logo: {
         alt: 'pe•ple',
-        src: 'static/images/logo-padded.svg',
-        href: 'https://havepeople.com/',
+        src: './static/images/logo-padded.svg',
+        href: '/docs/',
       },
       items: [
         {
