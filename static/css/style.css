@@ -902,6 +902,11 @@ p {
   font-size: 3.5rem;
 }
 
+.subtitle {
+  font-size: 1.2rem;
+  color: rgba(38,44,53,.6);
+}
+
 .top-background-right {
   position: absolute;
   top: 0;
