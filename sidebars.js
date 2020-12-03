@@ -1,6 +1,6 @@
 module.exports = {
   someSidebar: {
-    '👋 Welcome': ['reference', 'introduction', 'faq'],
+    '👋 Welcome': ['introduction', 'faq'],
     '🏃‍♂️ Quick Start': ['setup'],
     '📊 Admin': ['analytics', 'moderation'],
   },

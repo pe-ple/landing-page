@@ -23,6 +23,7 @@ module.exports = {
       logo: {
         alt: 'pe•ple',
         src: 'static/images/logo-padded.svg',
+        href: 'https://havepeople.com/',
       },
       items: [
         {
@@ -30,7 +31,7 @@ module.exports = {
           label: 'Homepage',
           position: 'right',
         },
-        {href: 'https://havepeople.com/?people', label: 'Our Community', position: 'right'},
+        {href: 'https://havepeople.com/?people', label: 'Demo', position: 'right'},
       ],
     },
     footer: {
